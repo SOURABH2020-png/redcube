@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="manifest" href="/site.webmanifest">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <title>Red Cube</title>
+</head>
+
+<body class="bg-black">
+
+        <!-- Header -->
+          <header>
+            <div class="main-menu offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+              </div>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="who-we-are.html">Who We Are</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="what-we-do.html">What We Do</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="what-we-offer.html">What We Offer</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="navbar navbar-dark i-toggle ">
+              <div class="container py-1">
+                <a href="/" class="navbar-brand  logo-img">
+                  <img src="img/logo.png" alt="Red Cube Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                  aria-controls="offcanvasNavbar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
+            </div>
+          </header>
+                <div class="container-fluid  position-absolute top-0">
+                  <div class="row vh-100">
+                    <div class="col-md-12 col-lg-6 pt-sm-5 padding-top  col-xl-6 offset-xl-1 d-flex justify-content-center align-items-start flex-column pe-lg-5">
+                      <div class=" pb-5 pt-2 text-white">
+                        <h2 class="fs-32 fs-semibold">Just say hi!</h2>
+                        <hp class="fs-18 fs-med">Tell us more about you and we will contact you soon</hp>
+                      </div>
+                      <form class="row g-4 needs-validation focus-form ">
+                        <div class="col-sm-12 col-md-6 contact-form">
+                          <input type="text" class="form-control bg-transparent text-white rounded-0"
+                           placeholder="Name" required>
+                        </div>
+                        <div class="col-sm-12 col-md-6 contact-form">
+                          <input type="email" class="form-control bg-transparent text-white rounded-0"
+                           placeholder="Email" required>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 contact-form">
+                          <input type="text" class="form-control bg-transparent text-white rounded-0"
+                           placeholder="Phone" required maxlength="20"  min="0" max="9999999999"  onkeypress="if(this.value.length == 10) return false">
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 contact-form">
+                          <input type="text" class="form-control bg-transparent text-white rounded-0"
+                           placeholder="How big is your Company?" required>
+                        </div>
+
+                        <div class="col-sm-12 col-md-12 contact-form">
+                          <textarea class="form-control bg-transparent text-white rounded-0"
+                            id="exampleFormControlTextarea1" placeholder="Message" rows="5" cols="100"
+                            required></textarea>
+                        </div>
+
+                        <div class="col-md-7 d-flex justify-content-between align-items-center pt-3">
+                          <p class="fs-14 fs-med text-white m-0">Want to join RedCube Ads team? <a href="" class="c-red" >
+                              Click here </a> to send CV.</p>
+                        </div>
+                        <div class="col-md-5 d-md-flex justify-content-md-end align-items-md-center">
+                          <button class="btn red-col text-white rounded-0 px-4" type="submit">Send Message</button>
+                        </div>
+                         
+                      </form>
+                    </div>
+                    <div class="ps-sm-4 d-flex pt-sm-5 padding-top none-smallscreen justify-content-center align-items-start flex-column ps-2 bg-color col-md-12 col-lg-4 col-xl-4 col-sm-12 py-5 pt-sm-5 pt-md-5 pt-lg-0">
+                      <div class="">
+                        <h6 class="fs-24 fs-bold text-white">Contact Information</h6>
+                      </div>
+                      <address>
+                            <div class="d-flex  pt-3">
+                              <div class="icon-image d-flex justify-content-center align-items-center">
+                                  <img src="./img/material-location.svg" alt="" class="mx-4">
+                              </div>
+                              <div class="ps-3">
+                                  <p class="fs-16 text-white m-0">Address 1 : The Onyx Tower - 1 Sheikh Zayed Road, II-E Greens Dubai, UAE </p>
+                                  <p class="fs-16 text-white m-0 pt-3">
+                                    Address 2 : 43-7, Pyeongdong-ro 803,
+                                    beon-gil, Gwangsan-gu, Gwangju, 
+                                    Republic of Korea</p>  
+                              </div>
+                          </div>
+                            <div class="d-flex align-items-center pt-3">
+                              <div class="icon-image d-flex justify-content-center align-items-center">
+                                  <img src="./img/phone-icon.svg" alt="" class="icon-phone-mail">
+                              </div>
+                              <div class="ps-3">
+                                  <p class="fs-16 text-white m-0">(+68) 120034509</p>
+                              </div>
+                          </div>
+
+                          <div class="d-flex align-items-center pt-3">
+                            <div class="icon-image d-flex justify-content-center align-items-center">
+                                <img src="./img/Icon-mail.svg" alt="" class="icon-phone-mail">
+                            </div>
+                            <div class="ps-3">
+                                <p class="fs-16 text-white m-0">info@redcubeads.com</p>
+                            </div>
+                        </div>
+                      </address>
+
+                      <div class="followUs pt-4">
+                        <div class="d-flex align-items-end">
+                          <p class="fs-16 fs-semibold text-white">Follow Us</p>
+                        </div>
+                        <div class="d-flex">
+                          <div>
+                            <div class="icon-image d-flex justify-content-center align-items-center">
+                              <img src="./img/facebook.svg" alt="">
+                          </div>
+                          </div>
+                          <div class="px-3">
+                            <div class="icon-image d-flex justify-content-center align-items-center">
+                              <img src="./img/linkedin.svg" alt="">
+                          </div>
+                          </div>
+                          <div>
+                            <div class="icon-image d-flex justify-content-center align-items-center">
+                              <img src="./img/twitter.svg" alt="">
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-1 col-lg-2 bg-color p-0 none-smallscreen">
+                        <div class="two-line vh-100-p"></div>
+                    </div>  
+                  </div>
+                </div>
+             
+
+
+
+
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="js/jquery.slim.min.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+
+</html>

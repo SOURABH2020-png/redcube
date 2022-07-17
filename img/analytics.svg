@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#af1519"/>
+      <stop offset="1" stop-color="#e32d2a"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_29" data-name="Group 29" transform="translate(-997 -2254)">
+    <rect id="Rectangle_11" data-name="Rectangle 11" width="60" height="60" rx="10" transform="translate(997 2254)" fill="#f5f5f5"/>
+    <path id="chart" d="M8.269,26.9a5.3,5.3,0,0,1-3.29-1.156,5.272,5.272,0,0,1-.822-7.408l7.027-8.784a5.382,5.382,0,0,1,7.278-.919l2.941,2.2L25.24,6.038a5.27,5.27,0,1,1,8.225,6.583L26.438,21.4a5.386,5.386,0,0,1-7.278.924l-2.941-2.207-3.837,4.794A5.23,5.23,0,0,1,8.269,26.9ZM15.3,11.085a1.752,1.752,0,0,0-1.372.657L6.9,20.528a1.757,1.757,0,1,0,2.744,2.194l5.964-7.456,5.664,4.251a1.8,1.8,0,0,0,2.426-.309l7.027-8.786A1.756,1.756,0,1,0,27.98,8.23l-5.964,7.452-5.664-4.246a1.732,1.732,0,0,0-1.054-.351ZM31.109,33.923H6.514a1.757,1.757,0,0,1,0-3.514h24.6a1.757,1.757,0,0,1,0,3.514Z" transform="translate(1008.135 2265.076)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

@@ -1,0 +1,788 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <title>Red Cube</title>
+
+
+  <style> 
+    .box{ float: left;}
+    .Augmenting__box__tiles{ float: left; margin-bottom: 5px;height: 115px;margin-top: 1rem;background-color: #D9D9D9;border-top-left-radius: 60%;margin-right: 5%;}
+    .Augmenting__box__img{background-color: red; float: left; width: 100px;height: 100%; transform: skewX(339deg);box-shadow: 10px 0 0 0 red;}
+    .Augmenting__box__content{background-color: #D9D9D9;color: black;float: left; width: 70%;}
+    .Augmenting__img-skewx{transform: skewx(17deg);}
+    .m1{margin-left: 5.5%;}
+    .m2{margin-left: -4.5%;}
+    .m3{margin-left: -14.5%;}
+    .m4{margin-left: -24.5%;}
+
+</style>
+</head>
+<body>
+  <div class="wrapper-header ">
+
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="main-menu offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="who-we-are.html">Who We Are</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="what-we-do.html">What We Do</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="what-we-offer.html">What We Offer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+    <div class="navbar navbar-dark bg-transparent i-toggle w-100" style="position: sticky;">
+      <div class="container py-1">
+        <a href="/" class="navbar-brand  logo-img">
+          <img src="img/logo.png" alt="Red Cube Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Section -->
+  <main class="container pt-lg-0 pt-5">
+    <div class="intro-content bounceInLeft">
+      <div class="col-md-12 col-lg-5">
+        <small class="fs-reg">Introducing</small>
+        <p class="lead fs-med">World's First advertisement Platform</p>
+        <h1 class="display-1 fs-bold">Digital Delivery <br class="d-none d-sm-block"> Box</h1>
+      </div>
+      <div class="product-device shadow-sm d-none d-md-block"></div>
+      <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+    </div>
+    <video autoplay muted loop class="intro-video">
+      <source src="video/intro-redcube.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+  </main>
+
+
+
+  <!-- Quick Menu -->
+  <div class="quick-menu p-5 mt-sm-4 d-none d-sm-flex big-screen-nav-mt">
+    <ul class="nav">
+      <li class="nav-item" onclick="product()">
+        <a class="nav-link active" aria-current="page" href="#" onclick="sc(0)">About Product</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" onclick="sc(1)">Product Specification</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" onclick="sc(2)">How it works</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" onclick="sc(3)">Why Choose Us?</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" onclick="sc(4)">Enquiry</a>
+      </li>
+    </ul>
+  </div>
+
+  
+
+  <!-- Problem Solution -->
+
+  <div class="prob-solution Product my-sm-5 big-screen-mt ">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 slash d-flex justify-content-center">
+          <div class="bike-delivery-box">
+            <h2 class="display-6 py-4 fs-semibold ps-5 backInUp ">Augmenting business with <br><span class="c-red">Digital
+                Delivery
+                Box</span>
+            </h2>
+            <img src="img/red-cube-bike.svg" alt="Bike and box"> <!-- leftside -->
+          </div>
+        </div>
+        <div class="col-lg-1 col-xl-1 col-md-12 d-none d-lg-none d-xl-flex col-sm-12 solution-image justify-content-between skewx-main d-flex"></div>
+        <div class="col-lg-6 col-xl-5 col-md-12 d-flex justify-content-center align-items-start flex-column ps-sm-5 ">
+        
+
+
+          <div class="box d-none d-md-none d-lg-block">
+            <div class="Augmenting__box__tiles m1">
+              <div class="Augmenting__box__img d-flex align-items-center justify-content-center">
+                <div class="Augmenting__img-skewx">
+                    <img src="img/Increased.svg" alt="">
+                </div>
+              </div>
+              <div class="Augmenting__box__content fs-12 m-0 ps-5 pt-2">
+                <strong class="fs-med text-danger">Additional Source Of Revenue</strong> <br>
+                <p class="fs-med fs-8">Red Cube monetization integrate well with current operating/commercial model.</p>
+              </div>
+            </div>
+            <div class="Augmenting__box__tiles m2">
+                <div class="Augmenting__box__img d-flex align-items-center justify-content-center">
+                  <div class="Augmenting__img-skewx">
+                      <img src="img/positioning.svg" alt="">
+                  </div>
+                </div>
+                <div class="Augmenting__box__content fs-12 m-0 ps-5 pt-2">
+                  <strong class="fs-med text-danger">Smart Ad Space</strong> <br>
+                  <p class="fs-med fs-8"> By leveraging Red Cube,our delivery partners can access additional Ad space at the intersection of offline and online while using data to enhance performance. </p>
+                </div>
+            </div>
+            <div class="Augmenting__box__tiles m3">
+                <div class="Augmenting__box__img d-flex align-items-center justify-content-center">
+                  <div class="Augmenting__img-skewx">
+                      <img src="img/data-augmentation.svg" alt="">
+                  </div>
+                </div>
+                <div class="Augmenting__box__content fs-12 m-0 ps-5 pt-2">
+                  <strong class="fs-med text-danger">Brand Positioning</strong> <br>
+                  <p class="fs-med fs-8 "> Given our innovative product, the partnership can support the brand positioning as a mobility innovation leader but also help SME’s to grow, who do not have large advertisement budgets.</p>
+                </div>
+            </div>
+            <div class="Augmenting__box__tiles m4">
+                <div class="Augmenting__box__img d-flex align-items-center justify-content-center">
+                  <div class="Augmenting__img-skewx">
+                      <img src="img/source-of-revenue.svg" alt="">
+                  </div>
+                </div>
+                <div class="Augmenting__box__content fs-12 m-0 ps-5 pt-2">
+                   <strong class="fs-med text-danger">Data Agumentation</strong> <br>
+                   <p class="fs-med fs-8">Data is crucial to ensure continuous innovation however today the data received is limited. With Red Cube, delivery partners will be able to receive additional ride data as well as
+                    external city data through our AI based city advertisement platform</p>
+                </div>
+            </div>
+        </div>
+
+         <!-- ========================= Mobile view Section ====================================== -->
+
+         <ul class="list-group d-lg-none d-md-block d-sm-block rounded-0 ">
+          <li class="mt-3 dedi-info  border-0 smallscreen-border-left list-group-item">
+            <div class=" fs-12 m-0 pt-2">
+              <strong class="fs-med text-danger">Additional Source Of Revenue</strong> <br>
+              <p class="fs-med">Red Cube monetization integrate well with current operating/commercial model.</p>
+            </div>
+          </li>
+          <li class="mt-3 dedi-info  border-0 smallscreen-border-left list-group-item">
+            <div class=" fs-12 m-0 pt-2">
+              <strong class="fs-med text-danger">Smart Ad Space</strong> <br>
+              <p class="fs-med"> By leveraging Red Cube,our delivery partners can access additional Ad space at the intersection of offline and online while using data to enhance performance. </p>
+            </div>
+          </li>
+          <li class="mt-3 dedi-info  border-0 smallscreen-border-left list-group-item">
+            <div class=" fs-12 m-0 pt-2">
+              <strong class="fs-med text-danger">Brand Positioning</strong> <br>
+              <p class="fs-med "> Given our innovative product, the partnership can support the brand positioning as a mobility innovation leader but also help SME’s to grow, who do not have large advertisement budgets.</p>
+            </div>
+          </li>
+          <li class="mt-3 dedi-info  border-0 smallscreen-border-left list-group-item">
+            <div class=" fs-12 m-0 pt-2">
+              <strong class="fs-med text-danger">Data Agumentation</strong> <br>
+               <p class="fs-med">Data is crucial to ensure continuous innovation however today the data received is limited. With Red Cube, delivery partners will be able to receive additional ride data as well as
+                external city data through our AI based city advertisement platform</p>
+           </div>
+          </li>
+        </ul>
+        <!-- ========================= Mobile view Section End ====================================== -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Sepecification -->
+
+  <div class="product-specification Specification backInUp">
+    <div class="container">
+      <div class="row">
+        <div class="col d-flex justify-content-center ms-sm-5 ms-3 text-center">
+          <div class="skewx-heading d-flex">
+            <h2 class="title fs-semibold py-sm-5 pt-4 ms-sm-5 backInUp">Providing Unique <br><span
+                class="c-red">Advertising</span> Medium
+            </h2>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="row pro-spe-box  mt-md-5 d-none d-sm-block">
+        <div class="col box-image pt-md-5 leftside">
+          <img src="img/red-cube-product-box.svg" alt="">
+        </div>
+        <!-- Software Section -->
+        <div class="col-lg-3 col-md-4 col-6 col-sm-6 box-soft ">
+          <div class="box">
+            <div class="heading backOutRight backInUp">
+              <img src="img/android.svg" alt="">
+              <span class="h3 fs-semibold title">Software</span>
+            </div>
+            <div class="box-content">
+              <ul class="text-white py-3">
+                <li>Android based operating system</li>
+                <li>Advertisement management system</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ops Section -->
+        <div class="col-lg-3 col-md-4 col-6 col-sm-5  box-ops">
+          <div class="box">
+            <div class="heading backOutRight backInUp">
+              <img src="img/cloud.svg" alt="">
+              <span class="h3 fs-semibold title">Ops Condition</span>
+            </div>
+            <div class="box-content">
+              <ul class="text-white py-3">
+                <li>-18 to 80 °C </li>
+                <li>IP 66 standard (Waterproof and dustproof)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Camera Section -->
+        <div class="col-lg-3 col-md-4 col-6 col-sm-6  box-camera">
+          <div class="box">
+            <div class="heading backOutRight backInUp">
+              <img src="img/camera.svg" alt="">
+              <span class="h3 fs-semibold title">AI Camera</span>
+            </div>
+            <div class="box-content">
+              <ul class="text-white py-3">
+                <li>4 inbuilt Ai camera for road safety</li>
+                <li>Data analytics </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Power Section -->
+        <div class="col-lg-3 col-md-4 col-6 col-sm-6  box-power">
+          <div class="box">
+            <div class="heading backOutRight backInUp">
+              <img src="img/plug.svg" alt="">
+              <span class="h3 fs-semibold title">Power usage</span>
+            </div>
+            <div class="box-content">
+              <ul class="text-white py-3">
+                <li>No additional battery used due to health and safety of rider and food.</li>
+                <li>Within 12v 3 -5A</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Data Section -->
+        <div class="col-lg-3 col-md-4 col-6 col-sm-6  box-data">
+          <div class="box">
+            <div class="heading backOutRight backInUp">
+              <img src="img/analytics.svg" alt="">
+              <span class="h3 fs-semibold title">Data Analytics</span>
+            </div>
+            <div class="box-content">
+              <ul class="text-white py-3">
+                <li>Cloud based Data analytics</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Connection Section -->
+        <div class="col-lg-3 col-md-4 col-6 col-sm-5  box-connect">
+          <div class="box">
+            <div class="heading backOutRight backInUp">
+              <img src="img/wi-fi.svg" alt="">
+              <span class="h3 fs-semibold title">Connectivity</span>
+            </div>
+            <div class="box-content">
+              <ul class="text-white py-3">
+                <li>WIFI</li>
+                <li>5G/LTE</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Section -->
+      <!-- smallscreen  -->
+
+
+      <div class="row d-sm-none">
+        <ul class="list-group border-0 bg-transparent">
+          <li class="list-group-item border-0 ">
+            <div class="box-soft">
+              <div class="box ">
+                <div class="heading android-icon ">
+                  <img src="img/android.svg" alt="">
+                  <span class="h3 fs-semibold title ">Software</span>
+                </div>
+                <div class="box-content">
+                  <ul class="text-white py-3">
+                    <li>Android based operating system</li>
+                    <li>Advertisement management system</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item border-0 ">
+            <!-- Ops Section -->
+            <div class=" box-ops">
+              <div class="box">
+                <div class="heading">
+                  <img src="img/cloud.svg" alt="">
+                  <span class="h3 fs-semibold title">Ops Condition</span>
+                </div>
+                <div class="box-content">
+                  <ul class="text-white py-3">
+                    <li>-18 to 80 °C </li>
+                    <li>IP 66 standard (Waterproof and dustproof)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item border-0 ">
+            <!-- Camera Section -->
+            <div class="  box-camera">
+              <div class="box">
+                <div class="heading">
+                  <img src="img/camera.svg" alt="">
+                  <span class="h3 fs-semibold title">AI Camera</span>
+                </div>
+                <div class="box-content">
+                  <ul class="text-white py-3">
+                    <li>4 inbuilt Ai camera for road safety</li>
+                    <li>Data analytics </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item border-0 ">
+            <!-- Power Section -->
+            <div class="  box-power">
+              <div class="box">
+                <div class="heading">
+                  <img src="img/plug.svg" alt="">
+                  <span class="h3 fs-semibold title">Power usage</span>
+                </div>
+                <div class="box-content">
+                  <ul class="text-white py-3">
+                    <li>No additional battery used due to health and safety of rider and food.</li>
+                    <li>Within 12v 3 -5A</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item border-0 ">
+            <!-- Data Section -->
+            <div class="  box-data">
+              <div class="box">
+                <div class="heading">
+                  <img src="img/analytics.svg" alt="">
+                  <span class="h3 fs-semibold title">Data Analytics</span>
+                </div>
+                <div class="box-content">
+                  <ul class="text-white py-3">
+                    <li>Cloud based Data analytics</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item border-0 ">
+            <!-- Connection Section -->
+            <div class=" box-connect">
+              <div class="box">
+                <div class="heading">
+                  <img src="img/wi-fi.svg" alt="">
+                  <span class="h3 fs-semibold title">Connectivity</span>
+                </div>
+                <div class="box-content">
+                  <ul class="text-white py-3">
+                    <li>WIFI</li>
+                    <li>5G/LTE</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="row mb-5">
+          <div class="col text-end">
+             <a href="what-we-do.html"> <button class="btn red-col text-white fs-med px-3">Find out more</button></a>
+          </div>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+  <!-- Dedibox Section -->
+  <div class="container-fluid repeating-strip-debibox">
+    <div class="row">
+      <div class="col p-0">
+        <div class="dedibox-sec">
+          <div class="container-fluid backInUp">
+            <div class="row">
+              <div class="col-md-8 col-sm-12 p-0">
+                <video autoplay muted loop class="w-100">
+                  <source src="video/dedibox.mp4" class="dedi-video" type="video/mp4">
+                  Your browser does not support HTML5 video.
+                </video>
+                <div class="row video-text-top">
+                  <div class="col-lg-12 col-md-12 col-xl-9 offset-xl-3 dedi-info py-5 px-5 backInUp">
+                    <h2 class="fs-semibold">Providing Unique <span class="c-red">Advertising</span> Medium</h2>
+                    <p>
+                      We are is the street-level digital media platform which provide real time advertisement on delivery bikes boxes 
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 margin-bottom red-col d-none d-md-inline repeating-bg-strip"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Problem Section -->
+        <!-- <div class="problem-sec">
+    <div class="container px-4 py-5" id="featured-3">
+      <h2 class="pb-2 text-center">Problems</h2>
+      <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores suscipit accusantium
+        reprehenderit labore deserunt iusto distinctio harum vitae blanditiis error? Voluptatibus odio veniam ipsum unde
+        dicta velit, rerum modi est?</p>
+
+      <div class="text-center"><img src="img/problem-step.svg" alt=""></div>
+      <div class="col-10 offset-md-1">
+        <div class="row">
+          <div class="feature col text-center">
+            <div class="wrapper">
+              <h4 class="fs-med c-red">Shrinking Margin</h4>
+              <p>Despite having the 20% to 30%
+                commission, aggregators works on very
+                little margins.New models with lower
+                commissions are entering the market and
+                will continue to put downward pressure on
+                overall market commissions.</p>
+            </div>
+          </div>
+          <div class="feature col text-center">
+            <div class="wrapper">
+              <h4 class="fs-med c-red">Visibility Of Restaurants</h4>
+              <p>Given the limited real estate on the App
+                and the increased numbers of partners
+                restaurant visibility is challenging
+                to achieve at scale. 1 App and million of
+                restaurants to advertise. </p>
+            </div>
+          </div>
+          <div class="feature  col text-center">
+            <div class="wrapper">
+              <h4 class="fs-med c-red">Harder To Lock-in Exclusive
+                Restaurants</h4>
+              <p>Given the amount of competitors it is
+                becoming more expensive to lock in
+                exclusive deals (Low commission, high
+                added value, revenue guarantees)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+        <!-- Workflow -->
+        <div class="work-flow Howitworks backInUp">
+          <div class="container pb-4 pb-sm-5">
+            <div class="heading py-sm-5">
+              <h2 class="fs-semibold">How It <span class="c-red">Works?</span></h2>
+              <p class="fs-med text-justify">
+                We connect our Digital Box with our delivery partner’s POS platform and run real time ads as soon partner’s rider recive the order, once delivery completed our digital screens begins to asdvertise any other business based on its GPS locaiton, time or any set conditions.  
+              </p>
+            </div>
+
+            <div class="row">
+              <div class="col-12 col-sm-12 col-md-3 text-sm-center how-it-smallscreen ">
+                <h3 class="c-red fs-semibold ">Order</h3>
+                <p class="fs-med text-justify text-sm-center">Order burger from “Burger Queen”</p>
+              </div>
+              <div class="col d-sm-none d-none d-md-flex position-relative justify-content-center">
+                <div class="position-absolute text-center zindex-work-flow smallscreen-img-work" id="howitwork">
+                  <img src="./img/circle.svg" alt="">
+                </div>
+                  <img src="img/work-flow.svg" alt="" class="zindex-work-flow">
+              
+              </div> <!-- id="howitwork" -->
+              <div class="col-12 col-sm-12 col-md-3 text-sm-center how-it-smallscreen">
+                <h3 class="c-red fs-semibold">Pick Up</h3>
+                <p class="fs-med text-justify text-sm-center">
+                  Burger queen's offers, promotions etc begins till delivery ends.
+                </p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col d-sm-none d-none d-md-flex"></div>
+              <div class="col d-sm-flex justify-content-sm-center flex-sm-column align-items-sm-center how-it-smallscreen">
+                <h3 class="c-red fs-semibold">Delivery</h3>
+                <p class="fs-med text-justify m-0">
+                  Location based advertisement loop
+                <ul class="fs-12 fs-med">
+                  <li>Company Branding</li>
+                  <li>New product launch</li>
+                  <li>City Events.</li>
+                </ul>
+                </p>
+              </div>
+              <div class="col d-sm-none d-none d-md-flex"></div>
+            </div>
+          </div>
+        </div>
+
+        <!--Why Us Section  -->
+        <div class="why-us WhyChooseUs backInUp py-5 py-sm-5 py-md-0">
+          <div class="container">
+            <div class="row d-none d-md-flex">
+              <div class="col-md-4 col-sm-12">
+                <div class="col py-md-4 py-lg-5 d-md-none d-lg-flex"></div>
+                <div class="col pt-md-4 pt-lg-0 leftside ">
+                  <h2 class="fs-semibold">Why <span class="c-red">Choose</span> Us?</h2>
+                  <p class="fs-med fs-14">
+                    Delivering millions of impression in a day providing blanket coverage of the city.
+                  </p>
+                </div>
+                <div class="col py-md-4 py-lg-4 d-md-none d-lg-flex"></div>
+                <div class="col py-md-3 py-lg-5 leftside">
+                  <h3 class="fs-semibold">2. Real time advertising </h3>
+                  <p class="fs-med fs-14">
+                    Change your advertisement campaigns in real time anytime anywhere via our cloud-based advertisement platform
+                  </p>
+                </div>
+                <div class="col py-md-2 py-lg-5 d-md-none d-lg-flex"></div>
+                <div class="col py-md-0 py-lg-5 leftside">
+                  <h3 class="fs-semibold">4.An affordable-we value every business</h3>
+                  <p class="fs-med fs-14">Scale your reach with street level exposure and meaningful
+                    engagements with your target audience as they move throughout
+                    their day.</p>
+                </div>
+              </div>
+
+              <div class="col-4 Road d-none d-sm-none d-md-flex">
+                <div class="col  text-center position-relative small-screen-road">
+                  <img src="img/road.svg" alt="" class="">
+                  <div id="bike" class="position-absolute bike-smallscreen animation">
+                    <img src="img/delivery-boy.svg" alt="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 col-sm-12">
+                <div class="col py-md-4 py-lg-5 d-md-none d-lg-flex"></div>
+                <div class="col py-md-4 py-lg-5 d-md-none d-lg-flex"></div>
+                <div class="col py-md-3 py-lg-4 flipInX">
+                  <h2 class="fs-semibold">1. Greater Outreach </h2>
+                  <p class="fs-med fs-14">
+                    The is one delivery bike in every corner of the city now you can take your brand name to very corner of the city.
+                  </p>
+                </div>
+                <div class="col py-md-4 py-lg-3 d-md-none d-lg-flex"></div>
+                <div class="col py-md-0 py-lg-5 flipInX">
+                  <h3 class="fs-semibold">3. Hyper Targeting </h3>
+                  <p class="fs-med fs-14">
+                    We deliver your brand where it matter most, we empowers brands to reach people where other media formats cannot. Delivering  customizable and scalable campaigns based on geofencing, day, time.
+                  </p>
+                </div>
+                <div class="col py-md-4 py-lg-5 d-md-none d-lg-flex"></div>
+                <div class="col py-md-0 py-lg-3"></div>
+                <div class="col py-md-0 pt-lg-5 flipInX">
+                  <h3 class="fs-semibold">5. Be Seen & Highlight</h3>
+                  <p class="fs-med fs-14">
+                    More visibility, businesses. The delivery bikes goes to every corner of the city, and it can be easily seen by 1000s of people. High reach reach, higher chance of making a great sale
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Small-screen ON -->
+            <div class="row d-md-none"> 
+              <ul class="list-group border-0 bg-transparent">
+                <li class="list-group-item border-0 bg-transparent text-smallscreen-rd">
+                  <h2 class="fs-semibold backInUp">Why <span class="c-red">Choose</span> Us?</h2>
+                  <p class="fs-med fs-14 text-justify">Delivering millions of impression in a day providing blanket coverage of the city.</p>
+                </li>
+                <li class="list-group-item border-0 bg-transparent text-smallscreen-rd small-screen-whyus">
+                  <h3 class="fs-semibold">1. Greater Outreach</h2>
+                  <p class="fs-med fs-14">The is one delivery bike in every corner of the city now you can take your brand name to very corner of the city.</p>
+                </li>
+                <li class="list-group-item border-0 bg-transparent text-smallscreen-rd small-screen-whyus ">
+                  <h3 class="fs-semibold">2. Real time advertising</h3>
+                  <p class="fs-med fs-14">Change your advertisement campaigns in real time anytime anywhere via our cloud-based advertisement platform</p>
+                </li>
+                <li class="list-group-item border-0 bg-transparent text-smallscreen-rd small-screen-whyus">
+                  <h3 class="fs-semibold">3. Hyper Targeting</h3>
+                  <p class="fs-med fs-14">We deliver your brand where it matter most, we empowers brands to reach people where other media formats cannot. Delivering customizable and scalable campaigns based on geofencing, day, time.
+                  </p>
+                </li>
+                <li class="list-group-item border-0 bg-transparent text-smallscreen-rd small-screen-whyus">
+                  <h3 class="fs-semibold">4. An affordable-we value every business</h3>
+                  <p class="fs-med fs-14">Scale your reach with street level exposure and meaningful engagements with your target audience as they move throughout their day.</p>
+                </li>
+                <li class="list-group-item border-0 bg-transparent text-smallscreen-rd small-screen-whyus">
+                  <h3 class="fs-semibold">5. Be Seen & Highlight</h3>
+                  <p class="fs-med fs-14">More visibility, businesses. The delivery bikes goes to every corner of the city, and it can be easily seen by 1000s of people. High reach reach, higher chance of making a great sale</p>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Subscribe Section -->
+        <div class="container Enquiry">
+          <div class="subscribe col-xl-6 col-lg-8 col-md-12 text-center offset-lg-2 offset-xl-3 py-sm-5">
+            <form class="py-5 text-small-screen-sub">
+              <h2 class="fs-semibold">Sign Up For <span class="c-red">Opportunities</span> And <span
+                  class="c-red">Updates.
+                </span></h2>
+              <p class="fs-med">Sign Up For Opportunities And Updates.</p>
+              <div class="d-flex w-100 subscribe-email-btn">
+                <input id="newsletter1" type="email" class="form-control rounded-0" placeholder="Email">
+                <button class="btn btn-primary px-2 px-sm-5 rounded-0 fs-med btn-text-sub"
+                  type="submit">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Footer Section -->
+  <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-4 col-lg-4 pt-5 pb-2 py-md-5">
+            <div class="w-50">
+              <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none logo-img">
+                <img src="img/logo.png" alt="Red Cube Logo">
+              </a>
+            </div>
+
+            <small class="fs-12">&copy; 2022 Red Cube. All Rights Reserved.</small>
+          </div>
+          <div class="smallscreen-footer-text col-sm-12 col-md-2 col-lg-2 py-2 py-md-5">
+            <h5 class="fs-med fs-16">PHONE</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0"> +91 8596742365 </a>
+                <!-- <a href="tel:+918596742365" class="nav-link p-0">+918596742365</a> -->
+              </li>
+            </ul>
+          </div>
+
+          <div class="smallscreen-footer-text col-sm-12 col-md-3 col-lg-2 py-2 py-md-5">
+            <h5 class="fs-med fs-16">MAIL</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0">info@redcube.com</a>
+                <!-- <a href="mailto:info@redcube.com" class="nav-link p-0">info@redcube.com</a> -->
+              </li>
+            </ul>
+          </div>
+
+          <div class="smallscreen-footer-text col-sm-12 col-md-3 col-lg-3 py-2 py-md-5 social">
+            <h5 class="fs-med fs-16">FOLLOW US</h5>
+            <address class="d-flex">
+              <div class="icon-image d-flex justify-content-center align-items-center">
+                <img src="./img/material-location.svg" alt="" class="mx-4">
+              </div>
+              
+              <a href="#" class="nav-link p-0"> 
+                <div class="icon-image d-flex justify-content-center align-items-center mx-3">
+                  <img src="./img/phone-icon.svg" alt="" class="icon-phone-mail">
+                </div>
+              </a>
+
+              <a href="#" class="nav-link p-0">
+                <div class="icon-image d-flex justify-content-center align-items-center">
+                  <img src="./img/Icon-mail.svg" alt="" class="icon-phone-mail">
+                </div>
+              </a>
+            </address>
+          </div>
+
+          <div class="col-sm-12 col-md-3 col-lg-1">
+            <div class="footer-line vh-100-p">
+
+            </div>
+          </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="js/jquery.slim.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+
+  <script>
+
+  </script>
+
+</body>
+
+</html>
